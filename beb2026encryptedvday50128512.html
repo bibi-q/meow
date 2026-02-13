@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentines Day</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+        <img src="envelope.png" alt="Envelope" id="envelope"/>
+        <p>A Letter for You</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+        <div class="letter-window">
+            <div id="walkthrough-content">
+                <h1 id="letter-title">Happy Valentines Day Beb</h1>
+                <img src="cat_heart.gif" class="cat" id="letter-cat"/>
+            </div>
+
+            <div class="buttons" id="letter-buttons">
+                <img src="arrow_left.png" class="btn prev-btn" id="prev-btn" alt="Back" style="visibility: hidden;"/>
+                <img src="arrow_right.png" class="btn next-btn" id="next-btn" alt="Next"/>
+            </div>
+            
+            <p id="final-text" class="final-text" style="display: none">
+                <strong>Valentine Date: </strong> Meow Restaurant
+            </p>
+        </div>
+    </div>
+    <div id="image-modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img id="modal-img" src="" alt="Enlarged Memory">
+    </div>
+    <script src="script.js"></script>
+</body>
