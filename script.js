@@ -11,7 +11,7 @@ let currentPage = 0;
 
 // custom pages loop through each
 const pages = [
-    { title: "Happy Valentines Day Beb", img: "cat_heart.gif" },
+    { title: "Happy Valentines Day Beb (This site will be more compatible on laptop/computer)", img: "cat_heart.gif" },
     { title: "Lets go on a little adventure", img: "cat_dance.gif" },
     { 
         title: "Take a trip down memory lane! (you can click)", 
@@ -281,4 +281,5 @@ prevBtn.onclick = prevPage;
 
 // initial styling for transitions
 title.style.transition = "opacity 0.2s";
+
 catImg.style.transition = "opacity 0.2s";
