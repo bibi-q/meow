@@ -69,7 +69,8 @@ const pages = [
         paragraph: "I know there are times where I might not be the best person, but I just want you to know that I really do care for you and I just want to see you happy. There is so much more I want to say, but I would also want to be able to express it to you in person since this is through my goofy website. Thank you for having me be your boyfriend and for bringing in so much joy in my life, I learned so much and got to experience so much being with you and I love you. Happy Valentines Day Corina <3" 
     },
     {
-        title: "The Big Reveal!", 
+        title: "The Big Reveal!",
+        img: "goofy_cat.gif",
         finalText: "Meow Restaurant" 
 }
 ];
@@ -233,9 +234,10 @@ function updatePage() {
             });
             document.getElementById("walkthrough-content").appendChild(gallery);
         } else if (content.finalText) {
-            catImg.style.display = "none";
+            catImg.style.display = "block";
+            catImg.src = "cat_dance.gif";
             finalText.style.display = "block";
-            finalText.textContent = "Valentine Date: Disney at any date you are free once you come back!";
+            finalText.textContent = "Valentine Date: I will pick you up and take you to go to Disney at any date you are free once you come back!";
             nextBtn.style.visibility = "hidden"; 
             prevBtn.style.visibility = "hidden"; 
         } else {
